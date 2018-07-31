@@ -14,7 +14,7 @@ public class PosTaggerServiceTest {
 
     @Test
     public void testTagPos() {
-        List<PosPair> posPairs = posTaggerService.tagPos("마른 땅을 달리다.");
+        List<PosPair> posPairs = posTaggerService.tagPos("마른 하늘을 달리다.");
         System.out.println(posPairs);
         assertThat(posPairs.size(), greaterThan(0));
     }
